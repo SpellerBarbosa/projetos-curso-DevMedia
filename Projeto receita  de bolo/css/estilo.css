@@ -1,0 +1,28 @@
+h1 {
+    font-family: Verdana;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial;
+    color: rgb(190, 68, 68);
+    text-align: center;
+}
+
+h3 {
+    color: rgb(190, 68, 68);
+    text-decoration: underline;
+    font-family: Verdana;
+}
+
+h4 {
+    color: rgb(190, 68, 68);
+    text-decoration: underline;
+    font-family: verdana;
+}
+
+div{
+    line-height: 30px;
+    text-align: arial;
+}
