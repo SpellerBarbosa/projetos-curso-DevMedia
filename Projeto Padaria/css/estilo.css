@@ -1,0 +1,98 @@
+body {
+    width: 980px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(252, 235, 216);
+}
+/* Estilo da primeira seção */
+.secao {
+    border-bottom: 1px solid rgb(231, 171, 97);
+    color: rgb(252, 185, 104);
+}
+
+.secao ul li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.secao ul li a {
+    text-decoration: none;
+    color: rgb(139, 94, 39);
+}
+
+.secao img {
+    width: 150px;
+}
+
+/* estilo da segunda  seção do site */
+.sobre {
+    border: transparent;
+}
+
+.sobre h1{
+    color: black;
+    font-family: Tahoma;
+}
+
+.sobre h2 {
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.sobre img{
+    width: 800px;
+}
+
+/* Inicio da terceira seção do site */
+
+.produtos {
+    background-color: rgb(238, 148, 39);
+    width: 800px;
+    height: 1080px;
+    margin: 30px auto;
+}
+
+.produtos h4,h3 {
+    color: aliceblue;
+    font-family: Tahoma;
+    font-size: 25px;
+}
+
+.produtos h3 {
+    padding-top: 40px;
+}
+
+.produtos img {
+    width: 500px;
+}
+
+.produtos p {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    line-height: 25px;
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+/*Inicio do estilo da quarta seção*/
+
+.contato h3 {
+    color: black;
+    font-size: 25px;
+}
+
+.contato p{
+    color: black;
+    font-family: Verdana;
+    font-size: 15px;
+}
+
+.contato span {
+    font-weight: bold;
+}
