@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilização 1º seção (cabecalho)*/
+.cabecalho {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: rgb(164, 233, 250);
+}
+
+.imagem-logo {
+    width: 150px;
+}
+
+.navegacao  li {
+    display: inline-block;
+    margin-left: 30px;
+    list-style: none;
+    font-size: 20px;
+    font-family:  monospace;
+}
+
+.navegacao li a {
+    color: black;
+}
+
+/*Estilização 2º seção (imagem*/
+
+.imgem-banner{
+    width: 80%;
+    margin: 50px 10% 50px 10%;
+}
+
+/*Estilização 3º seção  (Sobre) */
+
+.sobre {
+    width: 100%;
+}
+
+.sobre h1 {
+    text-align: center;
+    font-family: Arial;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 22px;
+    color: rgb(43, 153, 243);
+}
+
+.sobre img {
+    width: 30%;
+    margin: 0 35% 0 35%;
+}
+
+.sobre p {
+    width: 80%;
+    margin: 0 10%;
+    font-family: Verdana;
+    line-height: 30px;
+}
+
+.sobre p span{
+    font-weight: bold;
+    color: rgb(43, 153, 243);
+}
+
+/*Estilo 4º seção (Serviços)*/
+
+.servicos {
+    padding-top: 10px;
+    padding-bottom: 1px;
+    background-color: rgb(6, 114, 185);
+    width: 100%;
+}
+
+.servicos h3 {
+    color: white;
+    font-family: Arial;
+    margin: 30px 45% 30px 45%;
+    font-size: 28px;
+}
+
+.servicos p {
+    width: 50%;
+    margin: 0 25%;
+    font-size: 23px;
+    color: white;
+    font-size: Arial;
+}
+
+.servicos ul{
+    width: 16%;
+    margin: 30px 42%;
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.servicos ul li {
+    margin-top: 10px;
+}
+
+/*Estilização  5º seção (Apresentação dos Corretores)*/
+
+.corretores {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.corretores h3 {
+    color: rgb(6, 114, 185);
+    font-family: Verdana;
+    font-size: 21px;
+    text-align: center;
+}
+
+.corretores img {
+    width: 40%;
+    margin: 0 30%;
+}
+
+.corretores p {
+    width: 50%;
+    margin: 0 25%;
+    font-family: Arial;
+    line-height: 24px;
+}
+
+.corretores span {
+    font-weight: bold;
+    color: rgb(6, 114, 185);
+}
+
+/*Estilização 6 seção (contato)*/
+
+.contato {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(6, 114, 185);
+}
+
+.contato h3 {
+    color: white;
+    font-family: Tahoma;
+    text-align: center;
+}
+
+.contato iframe {
+    width: 55%;
+    height: 400px;
+    margin: 15px 22%;
+}
+
+.contato p {
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    width: 60%;
+    margin: 0 20%;
+}
+
+.contato ul {
+    margin: 0 44%;
+    width: 12%;
+    list-style: none;
+}
+
+.contato ul li {
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial;
+    border: 1px white solid;
+    border-radius: 15px;
+    margin-top: 5px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.contato ul li a {
+    text-decoration: none;
+    color: rgb(6, 114, 185);
+}
