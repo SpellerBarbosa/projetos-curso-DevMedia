@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+/*Estilização topo*/
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #2f86d6;
+    padding: 25px;
+    position: fixed;
+    
+}
+
+.container-logo {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+}
+
+.logo-img  img{
+    width: 60px;
+}
+
+.logo-texto h1{
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.logo-texto p {
+    margin-top: 0;
+    color: #fff;
+}
+
+.nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Estilização tabela*/
+
+.area-limitada  .tabela-precos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+    
+}
+
+.tabela-precos tr,th,td {
+    border-right: 1px solid rgb(231, 230, 230);
+    border-bottom: 1px solid rgb(231, 230, 230);
+    padding: 5px 20px;
+}
+
+.tabela-precos th:first-child, td:first-child{
+    background-color: rgb(231, 230, 230);
+    border-collapse: collapse;
+}
+
+
+.tabela-precos th {
+    background-color: rgb(231, 230, 230);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td:first-child {
+    border-bottom: solid 1px #fff;
+}
+
+table th:first-child {
+    background-color: #fff;
+}
+
+.container-rodape {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+.rodape {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    margin-top: 60px;
+    background-color: #2f86d6;
+   height: 200px;
+}

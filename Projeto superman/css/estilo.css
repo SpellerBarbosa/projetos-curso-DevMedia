@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Estilo topo*/
+.topo {
+    width: 100%;
+    background-color: rgb(83, 4, 156);
+    display: flex;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.topo h1 {
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+    margin: 15px 0 15px 200px;
+}
+
+.topo ul {
+    margin: 20px 0 15px 150px;
+}
+
+.topo ul li{
+    display: inline;
+    margin-left: 10px;
+    border: solid 1px white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-family: cursive;
+    background-color: white;
+}
+
+.topo ul li a {
+    color: rgb(83, 4, 156);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Estilo banner*/
+
+
+.banner img {
+    width: 100%;
+}
+
+/*estilo sinopse*/
+
+.disponibilidade img{
+    margin: 30px 10%;
+}
+
+.disponibilidade p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.galeria .fotos{
+    overflow-x: scroll;
+    display: flex;
+    width: 840px;
+    margin: 0 auto 0 auto;
+}
+
+.galeria p {
+    padding: 10px 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.galeria img {
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    box-shadow: 10px 10px 15px black;
+}
+
+
+/*Estilo area*/
+
+.area {
+    max-width: 70%;
+    margin: 30px 25%;
+}
+
+.area h2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+}
+
+.sinopse p {
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*estilização footer*/
+
+
+.rodape h3 {
+    color: white;
+    font-family: cursive;
+    margin: 15px auto;
+}
