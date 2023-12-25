@@ -5,11 +5,14 @@
     box-sizing: border-box;
     font-family: 'Ysabeau Infant', sans-serif;
 }
-
+/*Estilo usado para fixar o video de fundo*/
 .video-fundo {
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .video-fundo video {
@@ -17,71 +20,242 @@
     height: 100vh;
     object-fit: cover;
     position: absolute;
+    z-index: -1;
 }
 
-.conteiner-banner {
-    align-items: center;
+/*Estilo para o conteiner principal com os itens*/
+
+.conteiner {
+    width: 80%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Estilio para a imagem*/
+.conteiner-imagem {
+    width: 200px;
+    height: 200px;
     position: relative;
 }
 
-.imagem {
-    position: relative;
-    top: 100px;
-}
-
-.imagem::before {
+.conteiner-imagem::before {
     content: " ";
     width: 200px;
     height: 200px;
-    background: linear-gradient(to left, #009c3b,#ffdf00);
-    background-size: cover;
+    background: linear-gradient(to left, green,yellow);
     display: inline-block;
     border-radius: 50%;
-    position: relative;
 }
 
-.imagem::after {
+.conteiner-imagem::after {
     content: " ";
     width: 180px;
     height: 180px;
     background-image: url(../img/neymar.jpg);
     background-size: cover;
     display: inline-block;
-    border-radius: 50%;
     position: absolute;
-    left: 10px;
     top: 10px;
+    left: 10px;
+    border-radius: 50%;
 }
 
-.video-fundo h1 {
-    position: absolute;
-    top: 350px;
+/*Estilo do titulo*/
+
+.conteiner-titulo {
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    margin: 60px;
+    position: relative;
 }
 
-.video-fundo ul {
+.conteiner-titulo h1 {
+    color: #fff;
+    text-shadow: 1px 3px 1px black;
+}
+
+.conteiner-titulo::after{
+    content: " ";
+    width: 35px;
+    height: 2px;
+    background: linear-gradient(to left, green, yellow);
+    background-size: cover;
+    display: inline-block;
     position: absolute;
-    top: 450px;
+    left: 12px;
+    bottom: 9px;
+
+}
+
+.conteiner-titulo::before {
+    content: " ";
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/verificado.png);
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    right: -5px;
+    top: 20px;
+}
+
+/*Estilo dos links*/
+
+.conteiner-links {
     display: flex;
     flex-direction: column;
-    flex-shrink: 1;
-    flex-wrap: wrap;
-
+    width: 80%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.video-fundo ul li {
-    margin: 20px;
-    padding: 10px;
-    width: 70vh;
+.conteiner-links a {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 40px;
+    width: 100%;
+    padding: 10px 100px;
+    background-color: rgba(0, 0, 0, .5);
+    margin-bottom: 5px;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
 }
 
-.video-fundo ul li a {
-    text-decoration: none;
+.conteiner-links a:hover {
+    color: #000;
+    background-color: #ffffffe1;
+}
+
+.conteiner-links a:nth-child(1)::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/youtube.png);
+    background-size: cover;
+    position: absolute;
+    left: 30px;
+}
+
+.conteiner-links a:nth-child(2)::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/instagram.png);
+    background-size: cover;
+    position: absolute;
+    left: 30px;
+}
+
+.conteiner-links a:nth-child(3)::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/twitter.png);
+    background-size: cover;
+    position: absolute;
+    left: 30px;
+}
+
+.conteiner-links a:nth-child(4)::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/facebook.png);
+    background-size: cover;
+    position: absolute;
+    left: 30px;
+}
+
+.conteiner-links a:nth-child(5)::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/twitch.png);
+    background-size: cover;
+    position: absolute;
+    left: 30px;
+}
+/*Fim do estilo da primeira seção*/
+
+.conteiner-estatisticas {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/imagem-de-fundo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.titulo {
+    font-size: 35px;
     color: #fff;
+    text-shadow: 4px 4px 3px black;
+}
+
+.tabela {
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+}
+
+.tabela tr td,th {
+    border: solid 2px transparent;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+table tr:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, .5);
+    text-shadow: 2px 2px 1px black;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background-color: #ffffffce;
+    color: black;
+    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+}
+
+table thead tr:nth-of-type(1) {
+    background-color: rgba(0, 0, 0, .5);
+    text-shadow: 2px 2px 1px black;
+}
+
+
+table:nth-child(1)::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/cbf.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 27px;
+}
+
+table:nth-child(2)::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/santos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 27px;
 }
